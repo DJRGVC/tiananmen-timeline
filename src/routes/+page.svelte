@@ -36,13 +36,13 @@
             {/each}
         </Highlight>
     {:else if block.Type === "Section"}
-        <Section marginTop={block.marginTop === "true"}>
+        <Section marginTop={block.marginTop === "true"} title={block.Title}>
             {#each block.texts as text}
                 {#if text.type === "text"}
-                    <p>{text.value}</p>
+                    <p>{@html text.value}</p>
                 {:else if text.type === "Blockquote"}
                     <Blockquote attribution={text.value.Attribution}
-                        >{text.value.Text}</Blockquote
+                        >{@html text.value.Text}</Blockquote
                     >
                 {/if}
             {/each}
@@ -72,7 +72,7 @@
                 {#each block.foreground.ScrollerSections as section}
                     <ScrollerSection>
                         <p>
-                            {section.value}
+                            {@html section.value}
                         </p>
                     </ScrollerSection>
                 {/each}
