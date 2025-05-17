@@ -1,3 +1,4 @@
+
 <script>
   import "@onsvisual/svelte-components/css/main.css";
   import {
@@ -11,6 +12,7 @@
     Scroller,
     ScrollerSection
   } from "@onsvisual/svelte-components";
+  import { base } from '$app/paths';
 
   export let data;
 
@@ -77,15 +79,15 @@
     <Section marginTop title={block.Title}>
       <div class="image-banner">
         <div class="image-wrapper">
-          <img src="/images/Xidan-Democracy-Wall.jpg" alt="Students at the Democracy Wall, 1978" />
+          <img src="{base}/images/Xidan-Democracy-Wall.jpg" alt="Students at the Democracy Wall, 1978" />
           <div class="caption">Democracy Wall Movement, Beijing, 1978. Photo: Xidan Archives.</div>
         </div>
         <div class="image-wrapper">
-          <img src="/images/fang-tiananmen.jpg" alt="Fang Lizhi at Tiananmen Square, 1989" />
+          <img src="{base}/images/fang-tiananmen.jpg" alt="Fang Lizhi at Tiananmen Square, 1989" />
           <div class="caption">Fang Lizhi at Tiananmen Square demonstrations, 1989. Photo: IAS.</div>
         </div>
         <div class="image-wrapper">
-          <img src="/images/Hu-YaoBang.jpg" alt="Portrait of Hu Yaobang" />
+          <img src="{base}/images/Hu-YaoBang.jpg" alt="Portrait of Hu Yaobang" />
           <div class="caption">Hu Yaobang. Photo: Sohu News.</div>
         </div>
       </div>
@@ -105,15 +107,15 @@
     <Section marginTop title={block.Title}>
       <div class="image-banner">
         <div class="image-wrapper">
-          <img src="/images/death-hu.jpg" alt="Students lay wreaths for Hu Yaobang, April 1989" />
+          <img src="{base}/images/death-hu.jpg" alt="Students lay wreaths for Hu Yaobang, April 1989" />
           <div class="caption">Students lay wreaths for Hu Yaobang, Tiananmen Square, April 19, 1989.</div>
         </div>
         <div class="image-wrapper">
-          <img src="/images/PeoplesDailyEditorial26.jpg" alt="People’s Daily editorial, April 26, 1989" />
+          <img src="{base}/images/PeoplesDailyEditorial26.jpg" alt="People’s Daily editorial, April 26, 1989" />
           <div class="caption">April 26, 1989 People’s Daily editorial. Photo: People’s Daily.</div>
         </div>
         <div class="image-wrapper">
-          <img src="/images/zhao.jpg" alt="Zhao Ziyang, 1985" />
+          <img src="{base}/images/zhao.jpg" alt="Zhao Ziyang, 1985" />
           <div class="caption">Zhao Ziyang, 1985. Photo: Xinhua.</div>
         </div>
       </div>
@@ -133,15 +135,15 @@
     <Section marginTop title={block.Title}>
       <div class="image-banner">
         <div class="image-wrapper">
-          <img src="/images/Chinese_Premier_Li_Peng_1996.jpg" alt="Premier Li Peng, 1996" />
+          <img src="{base}/images/Chinese_Premier_Li_Peng_1996.jpg" alt="Premier Li Peng, 1996" />
           <div class="caption">Premier Li Peng, 1996. Photo: CCTV.</div>
         </div>
         <div class="image-wrapper">
-          <img src="/images/2june.jpg" alt="Protests in Tiananmen Square, June 2, 1989" />
+          <img src="{base}/images/2june.jpg" alt="Protests in Tiananmen Square, June 2, 1989" />
           <div class="caption">Pro-democracy protests in Tiananmen Square, June 2, 1989.</div>
         </div>
         <div class="image-wrapper">
-          <img src="/images/deng.jpg" alt="Deng Xiaoping, 1989" />
+          <img src="{base}/images/deng.jpg" alt="Deng Xiaoping, 1989" />
           <div class="caption">Deng Xiaoping, 1989. Photo: Xinhua.</div>
         </div>
       </div>
@@ -157,7 +159,7 @@
     <Section marginTop title={block.Title}>
       <div class="image-banner auto-height">
         <div class="image-wrapper">
-          <img src="/images/tank-man.jpg" alt="Tank Man standoff, June 5, 1989" />
+          <img src="{base}/images/tank-man.jpg" alt="Tank Man standoff, June 5, 1989" />
           <div class="caption">Tank Man standoff, June 5, 1989. Photo: Jeff Widener/AP.</div>
         </div>
       </div>
