@@ -1,1 +1,50 @@
 /* Put your css overrides here */
+
+/* Float the aside slot to the left, narrow the text */
+.align-right .scrolly-section__aside {
+  float: left;
+  width: 30%;
+  margin-right: 1rem;
+}
+
+.align-right .scrolly-section__content {
+  width: 65%;
+  text-align: right;
+}
+
+/* Clear floats on mobile if needed */
+@media (max-width: 768px) {
+  .align-right .scrolly-section__aside,
+  .align-right .scrolly-section__content {
+    float: none;
+    width: auto;
+    text-align: left;
+  }
+}
+
+.image-right-section {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.image-right-section .text-content {
+  flex: 2;
+}
+.image-right-section .image-aside {
+  flex: 1;
+}
+.image-right-section .image-aside img {
+  width: 100%;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.image-right-section .image-aside .caption {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .image-right-section {
+    flex-direction: column;
+  }
+}
