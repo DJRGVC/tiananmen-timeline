@@ -5,16 +5,17 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"build:text":"node ./scripts/build-text.js",
+		"build:text": "node ./scripts/build-text.js",
 		"preview": "vite preview"
 	},
 	"author": "Henry Lau",
-  	"license": "MIT",
+	"license": "MIT",
 	"devDependencies": {
 		"@onsvisual/svelte-charts": "^0.3.7",
 		"@onsvisual/svelte-components": "^0.1.26",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/adapter-static": "^3.0.1",
+		"@sveltejs/adapter-vercel": "^5.7.2",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"archieml": "^0.5.0",
