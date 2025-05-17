@@ -5,7 +5,7 @@ const config = {
   kit: {
     adapter: vercel({
       // explicitly target Node 18 runtime to satisfy Vercel adapter
-      runtime: 'nodejs18.x'
+      runtime: 'nodejs20.x'
     }),
     // no custom base path needed on Vercel
     paths: {
